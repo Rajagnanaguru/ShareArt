@@ -1,0 +1,60 @@
+.container {
+    display: flex;
+    background-color: chocolate;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+.heading {
+    align-self: center;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: white;
+    width: 70%;
+    height: 70%;
+    align-self: center;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.top {
+    display: flex; 
+    background-color: cyan;
+    width: 50%;
+    align-self: center;
+    justify-content: space-between;
+}
+
+.left {
+    background-color: darkorange;
+    width: 50%;
+}
+
+.right {
+    background-color: darkmagenta;
+    width: 50%;
+}
+
+.lastinbox {
+    display: flex;
+    background-color:darkcyan;
+    width: 70%;
+    align-self: center;
+    justify-content: center;
+}
+
+
+.inp {
+    align-content: flex-start;
+    background-color: darkkhaki;
+}
+
+.lastinp {
+    background-color: darkgray;
+    margin: 10px;
+}

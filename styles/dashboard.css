@@ -1,0 +1,78 @@
+.container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: burlywood;
+
+    justify-content: space-between;
+    padding: 0;
+}
+.leftbar {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 20%;
+    background-color: coral;
+    align-items: center;
+}
+
+.logout {
+    font: 20px;
+    background-color: green;
+    color: white;
+    border: 2px solid black;
+    align-self: flex-end;
+    padding: 5px;
+    margin: 10px;
+}
+
+.rightbar {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 80%;
+    background-color: crimson;
+    justify-content: flex-start;
+}
+.heading {
+    display: flex;
+    align-self: center;
+    color:cornsilk;
+}
+.buttons {
+    height: fit-content;
+    width: fit-content;
+    background-color: green;
+    border: 2px solid black;
+    border-radius: 4px;
+    font-size: 16px;
+    color:white;
+    padding: 5px;
+    top: 5px;
+    margin: 10px;
+}
+
+.buttons:hover {
+    text-decoration: none;
+    color:green;
+    background-color: white;
+}
+
+.centry {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: fit-content;
+    align-self: center;
+    background-color: blue;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.right_input {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
