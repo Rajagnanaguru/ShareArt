@@ -24,12 +24,12 @@
         }
 
         if($usermatchflag == 1){
-        if($passmatchflag == 1){
-            $_SESSION["user"] = $user;
-            echo '<script>alert("Login successful!")</script>';
-            echo '<script>location.href = "../admin/approval.php"</script>';
-        }else
-            echo '<script>alert("The userid and password mismatch. Try again!");</script>';
+            if($passmatchflag == 1){
+                $_SESSION["user"] = $user;
+                echo '<script>alert("Login successful!")</script>';
+                echo '<script>location.href = "../admin/approval.php"</script>';
+            }else
+                echo '<script>alert("The userid and password mismatch. Try again!");</script>';
         }else
             echo '<script>alert("User id not in db: '. $user .'");</script>';
     }

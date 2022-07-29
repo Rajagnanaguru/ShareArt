@@ -1,5 +1,6 @@
 <?php
     session_start();
+
     include "server_conn.php";
     $user = $_SESSION["user"];
 
@@ -13,7 +14,6 @@
     $email = $row['EMAIL'];
 
     $photo = $row['PROFILE_PIC'];
-    
 ?>
 
 <html lang="en">
@@ -32,10 +32,15 @@
 <body>
     <div class="container">
         <form class="box">
-            <h3 class="heading">EDIT PROFILE</h3>
+            <header class="heading"><h3>EDIT PROFILE</h3></header>
             
             <div class="top">
                 <div class ="left">
+                    <img src="<?php ?>" alt="Profile image"/>
+                    <input type="file" name="new_img"/>
+                </div>
+
+                <div class="right">
                     <div class="inbox">
                         <h4>USERID</h4><input class="inp" name="userid" type="text" value="<?php echo $user;?>"/>
                     </div>
@@ -47,11 +52,6 @@
                     <div class="inbox">
                         <h4>EMAIL</h4><input class ="inp" name="email" type="text" value="<?php echo $email;?>"/>
                     </div>
-                </div>
-
-                <div class="right">
-                    <img src="<?php ?>" alt="Profile image"/>
-                    <input type="file" name="new_img"/>
                 </div>
             </div>
 

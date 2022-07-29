@@ -28,6 +28,7 @@
     border: 3px solid black;
     margin: 20px;
 }
+
 .viewer {
     display: flex;
     flex-direction: column;
@@ -58,6 +59,7 @@
     margin: 2%;
     border: 2px solid black;
 }
+
 .description {
     width: 97%;
     overflow: auto;
@@ -81,5 +83,11 @@
     justify-content: center;
     width: 90%;
     padding: 10px;
+}
+
+@media only screen and (max-width: 700px) {
+    .viewer {
+        width: 100%;
+    }
 }
 

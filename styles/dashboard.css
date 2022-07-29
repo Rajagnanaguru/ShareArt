@@ -3,55 +3,85 @@
     height: 100%;
     width: 100%;
     background-color: burlywood;
-
-    justify-content: space-between;
     padding: 0;
 }
+
+.dropdown {
+    display: none;
+}
+
+.short-logout {
+    display: none;
+}
+
 .leftbar {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     height: 100%;
     width: 20%;
-    background-color: coral;
+    background-color: #05E0FA;
+    color: black;
     align-items: center;
 }
 
 .logout {
+    display: block;
     font: 20px;
     background-color: green;
     color: white;
-    border: 2px solid black;
-    align-self: flex-end;
+    /* border: 2px solid black; */
     padding: 5px;
     margin: 10px;
+    text-decoration: none;
+
+    align-self: flex-end;
+}
+
+.logout:hover {
+    text-decoration: none;
+    color: green;
+    background-color: white;
 }
 
 .rightbar {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     height: 100%;
-    width: 80%;
-    background-color: crimson;
-    justify-content: flex-start;
+    width: 100%;
+    background-color: #fa1f05;
+    align-items: center;
 }
+
 .heading {
     display: flex;
     align-self: center;
     color:cornsilk;
 }
+
 .buttons {
     height: fit-content;
     width: fit-content;
     background-color: green;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     border-radius: 4px;
     font-size: 16px;
     color:white;
     padding: 5px;
     top: 5px;
     margin: 10px;
+}
+
+.subbtn {
+    height: fit-content;
+    width: fit-content;
+    background-color: green;
+    /* border: 2px solid black; */
+    border-radius: 4px;
+    font-size: 16px;
+    color:white;
+    padding: 5px;
 }
 
 .buttons:hover {
@@ -68,11 +98,150 @@
     align-self: center;
     background-color: blue;
     margin-top: 20px;
-    padding: 10px;
 }
 
 .right_input {
     display: flex;
     justify-content: center;
     margin: 5px;
+}
+
+.textbox {
+    outline: none;
+    border: 3px solid orange;
+    font-size: 16px;
+    font-family: Verdana;
+    margin: 2%;
+}
+
+@media only screen and (max-width: 700px){
+    .container {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        background-color: burlywood;
+        padding: 0;
+    }
+
+    .leftbar {
+        display: none;
+    }
+
+    .short-logout {
+        display: block;
+        align-self: flex-end;
+        margin: 5%;
+    }
+
+    .show {
+        display: block;
+    }
+
+    .dropdown {
+        display: flex;
+        flex-direction: column;
+        min-width: 20%;
+        height: auto;
+    }
+
+    .dropdown-content {
+        display: none;
+        flex-direction: column;
+    }
+
+    .navbtn {
+        display: flex;
+        flex-wrap: wrap;
+        background: transparent;
+        position: absolute;
+        min-width: 100%;
+        justify-content: center;
+    }
+    
+    .navlinks {
+        background-color:rgb(156, 156, 156);
+        min-width: 100%;
+        border-radius: 20px;
+        color: black;
+        text-align: center;
+        margin-top: 4%;
+        text-decoration: none;
+    }
+
+    .navlinks:hover {
+        text-decoration: none;
+        color: white;
+        background-color: black;
+    }
+    
+    .dropbtn {
+        background-color:#05E0FA;
+        border-radius: 20px;
+        font-weight:bold;
+    }
+
+    .logout {
+        display: none;
+    }
+
+    .rightbar {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: 100%;
+        width: 100%;
+        background-color: #fa1f05;
+        justify-content: flex-start;
+    }
+
+    .heading {
+        display: flex;
+        align-self: center;
+        color:cornsilk;
+    }
+
+    .buttons {
+        height: fit-content;
+        width: fit-content;
+        background-color: green;
+        /* border: 2px solid black; */
+        border-radius: 4px;
+        font-size: 16px;
+        color:white;
+        padding: 5px;
+        top: 5px;
+        margin: 10px;
+    }
+
+    .buttons:hover {
+        text-decoration: none;
+        color:green;
+        background-color: white;
+    }
+
+    .centry {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        height: fit-content;
+        width: fit-content;
+        align-self: center;
+        background-color: blue;
+        margin-top: 5px;
+        padding: 10px;
+    }
+
+    .right_input {
+        display: flex;
+        justify-content: center;
+        margin: 5px;
+    }
+
+    .textbox {
+        outline: none;
+        border: 3px solid orange;
+        font-size: 16px;
+        font-family: Verdana;
+    }
+ 
 }

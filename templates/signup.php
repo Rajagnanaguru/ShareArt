@@ -15,6 +15,7 @@
 
     $userfoundflag = 0;
     $passmatchflag = 0;
+    
     if($result->num_rows > 0){
       while(($row = $result->fetch_assoc())) {
           if($row["username"] == $user){
@@ -40,6 +41,7 @@
     }
   }
 ?>
+
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -59,22 +61,37 @@
   </head>
 
   <body>
-    <div class="section_container">
-      
-      <h2>SIGN UP</h2>
-      <form action="signup.php" method="POST" class="innerbox">
-      <img class="item" src="../images/kolam_banner.png" width="384px" height="288px" alt="Kolam banner">
-      <div class="form_user flexi">
-        Userid <input type="text" name="userid" />
-      </div>
-      <div class="form_passwd flexi">
-        Password:<input type="password" name="passwd" />
-      </div>
-      <div class="form_submit flexi">
-        <input type="submit" name="submit" class="centry"/>
-      </div>   
-      </form>
-      
+    <div class="left_container">
+      <img class="kolam_image" src="../images/kolam_banner.png" width="80%" height="80%" alt="Kolam banner">
     </div>
+    
+    <div class="right_container">
+      <div class="in_container">
+        <h2 class="font1">SIGNUP</h2>
+
+        <form action="signup.php" method="POST" class="innerbox">
+
+          <div class="form_user flexi">
+            <input class="inp" type="text" name="userid" placeholder="Username"/>
+          </div>
+          <div class="form_passwd flexi">
+            <input class="inp" type="password" name="passwd" placeholder="Password"/>
+          </div>
+          <div class="form_submit flexi">
+            <input class="subbtn" type="submit" name="submit" class="centry" value="Enter"/>
+          </div>
+
+        </form>
+
+        <a class="signupbtn" href="admin_login.php">
+          <h3 class="font1">ADMIN</h3>
+        </a>
+
+        <a class="signupbtn font1" href="login.php">
+          Already having account? SignIn here
+        </a>
+      </div>  
+    </div>
+
   </body>
 </html>

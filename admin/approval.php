@@ -2,11 +2,13 @@
     session_start();
     $user = $_SESSION["user"];
 
+    if(!isset($_SESSION["user"]))
+        echo '<script>location.href = "../templates/admin_login.php"</script>';
+
     include "../templates/server_conn.php";
     $sql = "SELECT * FROM kolam_image WHERE APPROVED = 0 ORDER BY C_TIMESTAMP DESC";
 
     $result = $conn->query($sql);
-
 ?>
 
 <html lang="en">
