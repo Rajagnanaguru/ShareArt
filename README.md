@@ -1,5 +1,5 @@
 # ShareArt
-(View the project here -> <a href="http://www.shareart.tk/">PROJECT LINK</a>)<br>
+(View the project here -> <a href="https://www.shareart.tk/templates/login.php">PROJECT LINK</a>)<br>
 An PHP based website for sharing and viewing different visual arts.
 
 There are two modules namely Admin and Users.
